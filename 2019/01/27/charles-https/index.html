@@ -7,20 +7,20 @@
   
   <title>如何在WIN10下使用Charles对https进行抓包 | 李鹏程的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题来源：最近在Charles对https抓包时，遇到了难题 这个难题从几个月前就出现了，这两天终于解决了问题。 问题：在我使用Charles进行抓https时总是出现Unknown我进行了多次搜索引擎查询，搜索，可是无论我怎么安装证书都解决不了此问题！:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后">
+  <meta name="description" content="解决办法：第一步，安装证书:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后找到了解决办法（泪奔…激动….） 第二步，开启监听:1Proxy-&amp;gt;SSL Proxying Settings">
 <meta name="keywords" content="李鹏程,李鹏程的博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何在WIN10下使用Charles对https进行抓包">
 <meta property="og:url" content="https://blog.456best.com/2019/01/27/charles-https/index.html">
 <meta property="og:site_name" content="李鹏程的博客">
-<meta property="og:description" content="问题来源：最近在Charles对https抓包时，遇到了难题 这个难题从几个月前就出现了，这两天终于解决了问题。 问题：在我使用Charles进行抓https时总是出现Unknown我进行了多次搜索引擎查询，搜索，可是无论我怎么安装证书都解决不了此问题！:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后">
+<meta property="og:description" content="解决办法：第一步，安装证书:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后找到了解决办法（泪奔…激动….） 第二步，开启监听:1Proxy-&amp;gt;SSL Proxying Settings">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://blog.456best.com/image/charles1.png">
 <meta property="og:image" content="https://blog.456best.com/image/charles2.png">
-<meta property="og:updated_time" content="2019-01-26T16:51:16.481Z">
+<meta property="og:updated_time" content="2019-01-26T16:58:50.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在WIN10下使用Charles对https进行抓包">
-<meta name="twitter:description" content="问题来源：最近在Charles对https抓包时，遇到了难题 这个难题从几个月前就出现了，这两天终于解决了问题。 问题：在我使用Charles进行抓https时总是出现Unknown我进行了多次搜索引擎查询，搜索，可是无论我怎么安装证书都解决不了此问题！:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后">
+<meta name="twitter:description" content="解决办法：第一步，安装证书:1Help-&amp;gt;SSL Proxying-&amp;gt;Install Charles Root CertifiCate 终于，在我摸索一段时间后找到了解决办法（泪奔…激动….） 第二步，开启监听:1Proxy-&amp;gt;SSL Proxying Settings">
 <meta name="twitter:image" content="https://blog.456best.com/image/charles1.png">
   
     <link rel="alternate" href="/atom.xml" title="李鹏程的博客" type="application/atom+xml">
@@ -94,17 +94,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="问题来源："><a href="#问题来源：" class="headerlink" title="问题来源："></a>问题来源：</h3><p>最近在Charles对https抓包时，遇到了难题</p>
-<p>这个难题从几个月前就出现了，这两天终于解决了问题。</p>
-<h4 id="问题：在我使用Charles进行抓https时总是出现Unknown"><a href="#问题：在我使用Charles进行抓https时总是出现Unknown" class="headerlink" title="问题：在我使用Charles进行抓https时总是出现Unknown"></a>问题：在我使用Charles进行抓https时总是出现Unknown</h4><p>我进行了多次搜索引擎查询，搜索，可是无论我怎么安装证书都解决不了此问题！:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Help-&gt;SSL Proxying-&gt;Install Charles Root CertifiCate</span><br></pre></td></tr></table></figure></p>
+        <h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><p>第一步，安装证书:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Help-&gt;SSL Proxying-&gt;Install Charles Root CertifiCate</span><br></pre></td></tr></table></figure></p>
 <p>终于，在我摸索一段时间后找到了解决办法（泪奔…激动….）</p>
-<p>解决方案就是:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Proxy-&gt;SSL Proxying Settings</span><br></pre></td></tr></table></figure></p>
-<p>具体操作如下图<br><img src="/image/charles1.png" alt="图一"><br><img src="/image/charles2.png" alt="图二"></p>
+<p>第二步，开启监听:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Proxy-&gt;SSL Proxying Settings</span><br></pre></td></tr></table></figure></p>
+<p><img src="/image/charles1.png" alt="图一"><br><img src="/image/charles2.png" alt="图二"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.456best.com/2019/01/27/charles-https/" data-id="cjrdpoob200012cv8dr2k7e5v" class="article-share-link">Share</a>
+      <a data-url="https://blog.456best.com/2019/01/27/charles-https/" data-id="cjrdpz8nr0003g8v8u3ssm4ql" class="article-share-link">Share</a>
       
       
     </footer>
